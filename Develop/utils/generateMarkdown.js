@@ -64,7 +64,7 @@ ${data.testing}
 ~~~
 
 ## Questions
-If you have any questions about the repository, you can contact me directly at ${data.email}. You can view more of my work on GitHub [${data.username}](https://github.com/${data.username}): (https://github.com/${data.username}).`;
+If you have any questions, you can contact me directly at ${data.email}. You can view more of my work on GitHub: [${data.username}](https://github.com/${data.username}) (https://github.com/${data.username}).`;
 }
 
 module.exports = generateMarkdown;
