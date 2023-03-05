@@ -2,4 +2,4 @@
 
 ## Description
 
-This application efficiently generates a professional README with user input.
+This application is a command-line tool that efficiently generates a professional README from user input.
