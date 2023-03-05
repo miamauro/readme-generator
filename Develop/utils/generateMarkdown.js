@@ -1,32 +1,28 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 var badge = "";
+var licenseSection = "";
+
 function renderLicenseBadge(data) {
   if (data.license === "MIT") {
     badge = "![license badge](https://img.shields.io/badge/license-MIT-green)";
+    licenseSection = `This application is licensed under the ${data.license} license.`;
   } else if (data.license === "APACHE 2.0") {
     badge =
       "![license badge](https://img.shields.io/badge/license-APACHE_2.0-green)";
+    licenseSection = `This application is licensed under the ${data.license} license.`;
   } else if (data.license === "GPL 3.8") {
     badge =
       "![license badge](https://img.shields.io/badge/license-GPL_3.8-green)";
+    licenseSection = `This application is licensed under the ${data.license} license.`;
   } else if (data.license === "BSD 3") {
     badge =
       "![license badge](https://img.shields.io/badge/license-BSD_3-green)";
+    licenseSection = `This application is licensed under the ${data.license} license.`;
   } else {
     badge = "";
+    licenseSection = `${data.license}`;
   }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   renderLicenseBadge(data);
 
@@ -51,12 +47,11 @@ To install the necessary dependencies, run the following command:
 ${data.installation}
 ~~~
 
-
 ## Usage
 ${data.info}
 
 ## License
-This project is licensed under the ${data.license} license.
+${licenseSection}
 
 ## Contributing
 ${data.contribution}
