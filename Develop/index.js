@@ -57,9 +57,3 @@ inquirer
       error ? console.log(error) : console.log("Generating README...");
     });
   });
-
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
