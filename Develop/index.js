@@ -60,6 +60,14 @@ inquirer
 ## Description
 ${data.description}
 
+## Table of Contents
+[Installation](#installation)    
+[Usage](#usage)  
+[License](#license)  
+[Contributing](#contributing)  
+[Tests](#tests)  
+[Questions](#questions)
+
 ## Installation
 To install the necessary dependencies run the following command: ${data.installation}
 
