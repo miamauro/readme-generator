@@ -3,19 +3,20 @@ var licenseSection = "";
 
 function renderLicenseBadge(data) {
   if (data.license === "MIT") {
-    badge = "![license badge](https://img.shields.io/badge/license-MIT-green)";
+    badge =
+      "![MIT license badge](https://img.shields.io/badge/license-MIT-green)";
     licenseSection = `This application is licensed under the ${data.license} license.`;
   } else if (data.license === "APACHE 2.0") {
     badge =
-      "![license badge](https://img.shields.io/badge/license-APACHE_2.0-green)";
+      "![Apache license badge](https://img.shields.io/badge/license-APACHE_2.0-green)";
     licenseSection = `This application is licensed under the ${data.license} license.`;
   } else if (data.license === "GPL 3.8") {
     badge =
-      "![license badge](https://img.shields.io/badge/license-GPL_3.8-green)";
+      "![GPL license badge](https://img.shields.io/badge/license-GPL_3.8-green)";
     licenseSection = `This application is licensed under the ${data.license} license.`;
   } else if (data.license === "BSD 3") {
     badge =
-      "![license badge](https://img.shields.io/badge/license-BSD_3-green)";
+      "![BSD license badge](https://img.shields.io/badge/license-BSD_3-green)";
     licenseSection = `This application is licensed under the ${data.license} license.`;
   } else {
     badge = "";
