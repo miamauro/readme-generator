@@ -53,7 +53,7 @@ inquirer
     },
   ])
   .then((data) => {
-    fs.writeFile("README.md", generateMarkdown(data), (error) => {
+    fs.writeFile("genREADME.md", generateMarkdown(data), (error) => {
       error ? console.log(error) : console.log("Generating README...");
     });
   });

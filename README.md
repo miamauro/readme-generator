@@ -13,4 +13,4 @@ node index.js
 ```
 
 Below is a link to a video that will walk you through the necessary steps to generate your README.
-[Process Walkthrough]()
+[Process Walkthrough](https://drive.google.com/file/d/12lpKX8HtEze881aE29nM0ctqSKeneDiV/view)
