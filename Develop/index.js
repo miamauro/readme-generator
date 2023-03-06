@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+//Array of questions to display to user in command-line.
 inquirer
   .prompt([
     {
@@ -52,6 +53,7 @@ inquirer
         "What does the user need to know about contributing to the repository?",
     },
   ])
+  //Write readme file using data captured from user.
   .then((data) => {
     fs.writeFile("README.md", generateMarkdown(data), (error) => {
       error ? console.log(error) : console.log("Generating README...");

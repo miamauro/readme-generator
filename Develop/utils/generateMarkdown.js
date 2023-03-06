@@ -1,6 +1,8 @@
+//Declare global variables.
 var badge = "";
 var licenseSection = "";
 
+//Display chosen license in readme. Use io Sheilds license badges.
 function renderLicenseBadge(data) {
   if (data.license === "MIT") {
     badge =
@@ -24,6 +26,7 @@ function renderLicenseBadge(data) {
   }
 }
 
+//Insert data into readme boilerplate. Use template literals to insert user data.
 function generateMarkdown(data) {
   renderLicenseBadge(data);
 
@@ -67,4 +70,5 @@ ${data.testing}
 If you have any questions, you can contact me directly at ${data.email}. You can view more of my work on GitHub: [${data.username}](https://github.com/${data.username}) (https://github.com/${data.username}).`;
 }
 
+//Export variables to index.js.
 module.exports = generateMarkdown;
